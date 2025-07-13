@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Hero() {
   return (
     <div className="min-h-[80vh] bg-gray-600 flex justify-center flex-col items-center">
@@ -6,7 +8,7 @@ export default function Hero() {
         Calculate your dopamine overstimulation score, and take back your life
       </p>
       <button className="bg-white p-2 border-[2px] border-black mt-6 text-lg rounded-md">
-        Find your score
+        <Link to="/demo">Find your score</Link>
       </button>
     </div>
   );

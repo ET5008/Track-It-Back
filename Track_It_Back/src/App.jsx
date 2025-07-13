@@ -1,21 +1,18 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Nav from "./components/Nav"
-import Hero from "./components/Hero"
-import About from "./components/About"
-import DemoCard from "./components/DemoCard"
-import Footer from "./components/Footer"
+import Demo from "./Demo"
+import Home from "./Home"
 
 function App() {
 
   return (
     <>
       <Nav />
-      <main className='bg-[#cccccc]'>
-        <Hero />
-        <About />
-        <DemoCard />
-        <Footer />
-      </main>
+      
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/demo" element={<Demo />}/> 
+      </Routes>
     </>
   )
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function DemoCard() {
   return (
     <div className="mt-24 pb-24 flex justify-center">
@@ -10,7 +12,7 @@ export default function DemoCard() {
             you.
           </p>
           <button className="bg-white border-[1px] rounded-md border-black p-2 mt-10">
-            Try Demo
+            <Link to="/demo">Try demo</Link>
           </button>
         </div>
         <img className="w-85 rounded-md" src="https://hofcollection.com/cdn/shop/files/2020_Lewis_Hamilton_Bahrain_GP_1_5_Bell_Ltd_Edition_Replica_Mercedes_Helmet_sd_0007_Hue_Saturation_2.jpg?v=1721332460&width=2016" alt="" />
